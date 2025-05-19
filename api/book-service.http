@@ -20,9 +20,14 @@ Accept: application/json
 ### Update the book
 PATCH http://localhost:8080/api/books/Books(ID=4a519e61-3c3a-4bd9-ab12-d7e0c5329933)
 Content-Type: application/json
+<<<<<<< HEAD
 
 {
     "descr": "descr"
+=======
+{
+    "descr": "Emily Bronte"
+>>>>>>> 25040c64d84c9d6920c8ce07b9424bb6d85fe52c
 }
 
 ### Delete the book
