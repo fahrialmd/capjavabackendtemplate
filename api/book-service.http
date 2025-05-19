@@ -1,0 +1,28 @@
+### Get all books
+GET http://localhost:8080/api/books/Books
+Accept: application/json
+
+### Create a book
+POST http://localhost:8080/api/books/Books
+Content-Type: application/json
+
+{
+    "title": "Wuthering Heights",
+    "stock": 0,
+    "isbn": "test-isbn",
+    "descr": "A classic English novel about love and revenge set on the Yorkshire moors, following the tumultuous relationship between Heathcliff and Catherine Earnshaw, and exploring themes of passion, obsession, social class, and the destructive power of vengeance across generations."
+}
+
+### Get a book by ID
+GET http://localhost:8080/api/books/Books(ID=4a519e61-3c3a-4bd9-ab12-d7e0c5329933)
+Accept: application/json
+
+### Update the book
+PATCH http://localhost:8080/api/books/Books(ID=4a519e61-3c3a-4bd9-ab12-d7e0c5329933)
+Content-Type: application/json
+{
+    "descr": "Emily Bronte"
+}
+
+### Delete the book
+DELETE http://localhost:8080/api/books/Books(ID=4a519e61-3c3a-4bd9-ab12-d7e0c5329933)
